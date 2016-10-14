@@ -1,0 +1,13 @@
+History and development process[edit]
+
+Rich Hickey in San Francisco
+Rich Hickey is the creator of the Clojure language.[7] Before Clojure, he developed dotLisp, a similar project based on the .NET Framework,[27] and three earlier attempts to provide interoperability between Lisp and Java: a Java foreign language interface for Common Lisp (jfli),[28] A Foreign Object Interface for Lisp (FOIL),[29] and a Lisp-friendly interface to Java Servlets (Lisplets).[30]
+
+Hickey spent about 2½ years working on Clojure before releasing it publicly, much of that time working exclusively on Clojure with no outside funding. At the end of this time, Hickey sent an email announcing the language to some friends in the Common Lisp community.
+
+The development process is community-driven[12] and is managed at the Clojure Community website.[31] The website contains planning documents and an issue tracker where bugs may be filed. General development discussion occurs at the Clojure Dev Google Group.[32] While anyone can submit bug reports and ideas, to contribute patches one must sign the Clojure Contributor agreement.[33] JIRA tickets are processed by a team of screeners and finally Rich Hickey approves the changes.[34]
+
+Design philosophy[edit]
+Rich Hickey developed Clojure because he wanted a modern Lisp for functional programming, symbiotic with the established Java platform, and designed for concurrency.[16][17][35]
+
+Clojure's approach to state is characterized by the concept of identities,[36] which are represented as a series of immutable states over time. Since states are immutable values, any number of workers can operate on them in parallel, and concurrency becomes a question of managing changes from one state to another. For this purpose, Clojure provides several mutable reference types, each having well-defined semantics for the transition between states.
